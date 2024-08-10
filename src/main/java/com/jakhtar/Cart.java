@@ -32,14 +32,13 @@ public class Cart {
 
     public void displayCart() {
         System.out.println("*".repeat(28));
-        System.out.println("*".repeat(6) + " Shopping Cart " + "*".repeat(6));
+        System.out.println("*".repeat(6) + " Shopping Cart  " + "*".repeat(6));
         System.out.println("*".repeat(28));
-        System.out.println();
-        System.out.println("Product\t\t Unit Price");
+        System.out.println("| Product |\s\s| Unit Price |");
         System.out.println("-".repeat(28));
         this.getAllCartItems().stream().forEach(p -> System.out.println(p));
-        System.out.println("*".repeat(28));
-        System.out.println("Cart total: \t\t" + this.getCartTotal());
+        System.out.println("-".repeat(28));
+        System.out.println("Gross total\t\t" + this.getCartTotal());
     }
 }
     
